@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        /* 
+
+        fex direction: row;
+        main-axis é o eixo principal na horizontal
+        main-start inicio
+        main-end final
+
+        cross-axis é o eixo principal na vertical
+        cross-start inicio
+        cross-end final
+        */
+        div.container_1{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            height: 400px;
+        }
+
+        div.container_2{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+            height: 400px;
+        }
+
+         div.container_3{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: stretch;
+            height: 400px;
+        }
+
+         div.container_4{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            height: 400px;
+        }
+
+         div.container_5{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            height: 400px;
+        }
+         div.container_6{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+            height: 400px;
+        }
+         div.container_7{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+            height: 400px;
+        }
+
+        div.item{
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>campo 1</h1>
+    <div class="container_1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+
+    </div>
+    <h1>campo 2</h1>
+    <div class="container_2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h1>campo 3</h1>
+    <div class="container_3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h1>campo 4</h1>
+    <div class="container_4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    
+    <h1>campo 5</h1>
+    <div class="container_5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    
+    <h1>campo 6</h1>
+    <div class="container_6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+    <h1>campo 7</h1>
+    <div class="container_7">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+
+</body>
+</html>

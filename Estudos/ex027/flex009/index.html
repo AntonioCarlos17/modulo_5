@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        /* 
+
+        flex direction: row;
+        main-axis é o eixo principal na horizontal
+        main-start inicio
+        main-end final
+
+        cross-axis é o eixo principal na vertical
+        cross-start inicio
+        cross-end final
+        */
+        div.container{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+            /*flex-basis mantem a largura dos itens independente do conteudo, porém ele pode quebrar ao diminuir a largura do container. usando a opção flex-flow nowrap ele diminui a largura dos itens mas pode aumentar a altura dependendo do conteudo.*/
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">ANTONIO</div>
+        <div class="item">BRUNO</div>
+        <div class="item">CLAUDIO</div>
+        <div class="item">DAVID</div>
+        <div class="item">ELTON</div>
+        <div class="item">FLAVIO</div>
+        <div class="item">GUSTAVINHO</div>
+    </div>
+    
+</body>
+</html>

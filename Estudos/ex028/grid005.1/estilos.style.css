@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    height: 600px;
+    background-color: blueviolet;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.caixa1{
+    background-color: aqua;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.caixa2{
+    background-color: brown;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    grid-row-start: 4;
+    grid-row-end: -1;
+    grid-column-start: 5;
+    grid-column-end: -1;
+}
+.caixa3{
+    background-color: chocolate;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    grid-row-start: 4;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.caixa4{
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: -1;
+}

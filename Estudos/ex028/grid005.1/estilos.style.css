@@ -20,7 +20,7 @@
     grid-column-end: 5;
 }
 
-.caixa2{
+.caixa3{
     background-color: brown;
     text-align: center;
     font-size: 1em;
@@ -30,7 +30,7 @@
     grid-column-start: 5;
     grid-column-end: -1;
 }
-.caixa3{
+.caixa2{
     background-color: chocolate;
     text-align: center;
     font-size: 1em;
